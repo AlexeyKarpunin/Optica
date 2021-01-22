@@ -12,7 +12,7 @@ export default function Wait () {
           </h2>
           <ul>
             <li> 
-              <img style={{width: '19px', height: '25px'}} src='/img/vector.png' alt='' />
+              <img style={{width: '19px', height: '25px'}} src='/img/Vector.png' alt='' />
               ул. Боевая, 14
             </li>
             <li>
