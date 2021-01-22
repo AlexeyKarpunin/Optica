@@ -60,6 +60,12 @@ const WaitSection = styled.section`
   // background: url(/img/background-wait.jpg) no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (max-width: 950px) {
+    margin-top: 0;
+    height: auto;
+    padding-bottom: 50px;
+  }
 `;
 const WaitContainer = styled.div`
   max-width: 1170px;

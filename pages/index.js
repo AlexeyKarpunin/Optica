@@ -36,6 +36,7 @@ const BackgroundWrraper = styled.section`
 
   @media (max-width: 950px) {
     background: none;
+    margin-top: 0px;
   }
 `;
 
