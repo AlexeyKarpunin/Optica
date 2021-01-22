@@ -6,8 +6,8 @@ import Offers from '../components/Offers';
 import Wait from '../components/Wait';
 import Ask from '../components/ask/Ask'
 import Footer from '../components/footer/Footer';
-import '../styles/fonts.css';
 import styled from 'styled-components';
+import '../styles/fonts.css';
 
 export default function Home() {
   return (

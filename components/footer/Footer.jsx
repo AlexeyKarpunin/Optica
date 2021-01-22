@@ -28,6 +28,27 @@ const FooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 47px 0 0 0;
+
+  @media (max-width: 1124px) {
+    padding: 200px 0 0 0;
+  }
+
+  @media (max-width: 1050px) {
+    flex-wrap: wrap;
+    padding: 200px 15px 0 15px;
+  }
+
+  @media (max-width: 590px) {
+    padding: 250px 15px 15px 15px;
+  }
+
+  @media (max-width: 410px) {
+    padding: 320px 15px 15px 15px;
+  }
+
+  @media (max-width: 385px) {
+    flex-direction: column;
+  }
 `;
 
 

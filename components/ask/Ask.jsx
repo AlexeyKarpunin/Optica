@@ -45,6 +45,10 @@ const AskQustion = styled.div`
     color: #1C8594;
   }
 
+  @media (max-width: 1145px) {
+    margin-left: 15px;
+  }
+
 `;
 
 const AskSection = styled.section`

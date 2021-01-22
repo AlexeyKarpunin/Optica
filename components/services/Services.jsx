@@ -16,8 +16,7 @@ export default function Services () {
 const ServicesSection = styled.section`
   max-width: 1920px;
   margin: 0 auto;
-  // margin-top: 19px;
-  // background: url(/img/services/background.jpg) no-repeat;
+
   background-position: center;
   background-size: cover;
 `;
@@ -26,4 +25,8 @@ const ServicesContainer = styled.div`
   padding-top: 78px;
   margin: 0 auto;
   display: flex;
+
+  @media (max-width: 1250px) {
+    flex-direction: column;
+  }
 `;

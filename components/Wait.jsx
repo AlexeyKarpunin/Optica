@@ -42,6 +42,14 @@ const IMG = styled.img`
   position: absolute;
   top: 147px;
   left: 519px;
+
+  @media (max-width: 1175px) {
+    left: 405px;
+  }
+
+  @media (max-width: 1055px) {
+    display: none;
+  }
 `;
 
 const WaitSection = styled.section`
@@ -114,5 +122,9 @@ const WaitInfo = styled.div`
 
   ul li img {
     margin-right: 11px;
+  }
+
+  @media (max-width: 410px) {
+    padding: 52px 0 15px 10px;
   }
 `;

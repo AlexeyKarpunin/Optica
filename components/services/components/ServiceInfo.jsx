@@ -56,6 +56,14 @@ export default function Serviceinfo () {
 
 const InfoContainer = styled.div`
   min-width: 390px;
+
+  @media (max-width: 1250px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 450px) {
+    min-width: 280px;
+  }
 `;
 const HeadLine = styled.div`
   margin-bottom: 67px;

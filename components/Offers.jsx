@@ -77,6 +77,16 @@ const VidioBox = styled.div`
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
   }
+
+  @media (max-width: 605px) {
+    width: 400px;
+    height: 233px;
+  }
+
+  @media (max-width: 410px) {
+     width: 275px; 
+     height: 180px; 
+  }
 `;
 
 const OffersSection = styled.section`
@@ -92,6 +102,10 @@ const OffersContainer = styled.div`
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
+
+  @media (max-width: 950px) {
+    flex-direction: column-reverse;
+  }
 `;
 const OffersVideo = styled.div``;
 const OffersList = styled.div`

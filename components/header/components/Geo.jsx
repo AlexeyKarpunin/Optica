@@ -7,14 +7,19 @@ export default function Geo () {
   return (
     <GeoContainer>
       <LogoContainer>
-        <Logo />
-        {/* <img src='/img/logo.png' alt='logo' /> */}
-        <LogoText />
+        <LogoWrraper>
+          <Logo />
+          <LogoText />
+        </LogoWrraper>
         <Geolocation />
       </LogoContainer>
     </GeoContainer>
   );
 }
+
+const LogoWrraper = styled.div`
+  display: flex;
+`;
 
 const GeoContainer = styled.div`
   max-width: 1170px;
@@ -23,10 +28,10 @@ const GeoContainer = styled.div`
 
 const LogoContainer = styled.div`
   display: flex;
-  // img {
-  //   height: 62px;
-  //   width: 45px;
-  //   margin: 8px 0 0 0;
-  // }
+
+  @media (max-width: 495px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 

@@ -51,4 +51,10 @@ const VisionText = styled.div`
     font-size: 22px;
     color: #636464;
   }
+
+  @media (max-width: 420px) {
+    h1 {
+      font-size: 38px;
+    }
+  }
 `;

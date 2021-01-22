@@ -28,11 +28,19 @@ const Glasses = styled.img`
   position: absolute;
   top: -67px;
   right: -75px;
+
+  @media (max-width: 528px) {
+    display: none;
+  }
 `;
 const Rectangle = styled.img`
   position: absolute;
   top: -85px;
   left: -40px;
+
+  @media (max-width: 460px) {
+    display: none;
+  }
 `;
 
 const FormWrapper = styled.form`
@@ -100,5 +108,34 @@ const FormWrapper = styled.form`
     line-height: 22px;
     color: #B2C1C4;
   }
+  
+  @media (max-width: 1325px) {
+    right: 155px;
+  }
 
+  @media (max-width: 1125px) {
+    left: 50px;
+    top: 400px;
+    right: 0;
+  }
+
+  @media (max-width: 590px) {
+    width: 400px;
+    height: 700px;
+  }
+
+  @media (max-width: 460px) {
+    left: 10px;
+  }
+
+  @media (max-width: 410px) {
+    width: 280px;
+    height: 800px;
+    padding: 53px 20px 60px 20px;
+
+  }
+
+  @media (max-width: 281px) {
+    left: 0px;
+  }
 `;

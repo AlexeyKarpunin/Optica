@@ -22,17 +22,44 @@ const GeoContainer = styled.div`
   justify-content: space-between;
   max-width: 770px;
   flex-grow: 1;
+
+  @media (max-width: 1160px) {
+    justify-content: space-evenly;
+  }
+
+  @media (max-width: 920px) {
+    margin-left: 0px;
+  }
 `;
 
 const City = styled.div`
   align-self: center;
   display: flex;
+
   span {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     color: #8F8F8F;
     margin-left: 11px;
+  }
+
+  @media (max-width: 744px) {
+    span {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 635px) {
+    span {
+      display: none;
+    }
+
+    img {
+      display: none;
+    }
   }
 `;
 const Number = styled.div`
@@ -50,5 +77,9 @@ const Number = styled.div`
     width: 17px;
     height: 17px;
     align-self: center;
+  }
+
+  @media (max-width: 495px) {
+    margin: 5px 0;
   }
 `;
