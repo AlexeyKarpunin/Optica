@@ -103,11 +103,14 @@ const BigLi = styled.li`
 
   @media (max-width: 825px) {
     margin: 0 auto;
-    margin-right: 0;
 
     &:nth-child(1) {
-      margin-right: 0;
+      margin-right: auto;
     }
+  }
+
+  @media (max-width: 380px) {
+    width: 270px;
   }
 `;
 
@@ -127,7 +130,11 @@ const SmallLi = styled.li`
     &:nth-child(3) {
       margin-top: 23px;
     }
+
     margin: 0 auto;
-    margin-right: 0;
+  }
+
+  @media (max-width: 380px) {
+    width: 270px;
   }
 `;

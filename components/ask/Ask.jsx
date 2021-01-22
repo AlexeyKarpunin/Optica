@@ -64,4 +64,7 @@ const AskContainer = styled.div`
   margin: 0 auto;
   position: relative;
   padding: 132px 0 0 0;
+  @media (max-width: 950px) {
+    padding: 0;
+  }
 `;

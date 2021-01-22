@@ -63,8 +63,14 @@ const InfoContainer = styled.div`
 
   @media (max-width: 450px) {
     min-width: 280px;
+    padding: 0 10px;
+  }
+
+  @media (max-width: 295px) {
+    padding: 0;
   }
 `;
+
 const HeadLine = styled.div`
   margin-bottom: 67px;
 

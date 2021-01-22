@@ -48,6 +48,14 @@ const FooterContainer = styled.div`
 
   @media (max-width: 385px) {
     flex-direction: column;
+    h2 {
+      text-align: center;
+    }
+
+    ul {
+      width: 200px;
+      margin: 15px auto;
+    }
   }
 `;
 

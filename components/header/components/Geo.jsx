@@ -31,7 +31,7 @@ const LogoContainer = styled.div`
 
   @media (max-width: 495px) {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 `;
 

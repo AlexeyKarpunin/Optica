@@ -30,6 +30,12 @@ const VisionSection = styled.section`
   height: 628px;
   background-position: center;
   background-size: cover;
+
+  @media (max-width: 675px) {
+    background: url('/img/vision-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+  }
 `;
 const VisionContent = styled.div`
   max-width: 1170px;

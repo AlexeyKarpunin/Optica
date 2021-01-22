@@ -14,7 +14,8 @@ export default function Offers () {
             text='Записаться на прием'
             styles='padding: 23px 40px;margin-top: 90px;
             box-shadow: inset 0px -1px 3px rgba(255, 255, 255, 0.2);
-            filter: drop-shadow(0px 19px 15px rgba(0, 0, 0, 0.15));'
+            filter: drop-shadow(0px 19px 15px rgba(0, 0, 0, 0.15));
+            '
           />
         </OffersVideo>
         <OffersList>
@@ -55,16 +56,9 @@ export default function Offers () {
           </ul>
         </OffersList>
       </OffersContainer>
-      {/* <Elips src='/img/elips.png' alt='elips' /> */}
     </OffersSection>
   );
 }
-
-// const Elips = styled.img`
-//   position: absolute;
-//   right: 0;
-//   top: -415px;
-// `;
 
 const VidioBox = styled.div`
   width: 600px;
@@ -81,6 +75,7 @@ const VidioBox = styled.div`
   @media (max-width: 605px) {
     width: 400px;
     height: 233px;
+    margin: 0 auto;
   }
 
   @media (max-width: 410px) {
@@ -94,9 +89,12 @@ const OffersSection = styled.section`
   margin: 0 auto;
   position: relative;
   margin-top: 139px;
-  // background: url(/img/background-offers.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
+
+  @media (max-width: 950px) {
+    background: url(/img/background-offers.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 `;
 const OffersContainer = styled.div`
   max-width: 1170px;
@@ -107,7 +105,11 @@ const OffersContainer = styled.div`
     flex-direction: column-reverse;
   }
 `;
-const OffersVideo = styled.div``;
+const OffersVideo = styled.div`
+  @media (max-width: 605px) {
+    text-align: center;
+  }
+`;
 const OffersList = styled.div`
   h2 {
   font-style: normal;
@@ -149,6 +151,12 @@ const OffersList = styled.div`
     -ms-transform: translate(-50%,0);
     transform: translate(0, -50%);
     background: rgba(83,200,231,0.5);
+}
+
+@media (max-width: 950px) {
+  h2 {
+    padding: 0 10px;
+  }
 }
 
 `;

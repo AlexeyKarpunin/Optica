@@ -33,5 +33,9 @@ const BackgroundWrraper = styled.section`
   margin-top: 57px;
   background-position: center;
   background-size: cover;
+
+  @media (max-width: 950px) {
+    background: none;
+  }
 `;
 

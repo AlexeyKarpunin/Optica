@@ -129,13 +129,10 @@ const FormWrapper = styled.form`
   }
 
   @media (max-width: 410px) {
-    width: 280px;
-    height: 800px;
+    width: 100%;
+    height: 700px;
+    left: 0;
     padding: 53px 20px 60px 20px;
-
-  }
-
-  @media (max-width: 281px) {
-    left: 0px;
+    top: 420px;
   }
 `;

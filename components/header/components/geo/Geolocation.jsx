@@ -80,6 +80,6 @@ const Number = styled.div`
   }
 
   @media (max-width: 495px) {
-    margin: 5px 0;
+    margin: 5px 0 5px 52px;
   }
 `;
