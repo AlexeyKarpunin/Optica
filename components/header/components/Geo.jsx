@@ -26,7 +26,7 @@ const LogoWrraper = styled.div`
 
 const GeoContainer = styled.div`
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 7px auto;
 `;
 
 const LogoContainer = styled.div`
