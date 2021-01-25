@@ -50,6 +50,7 @@ const VisionText = styled.div`
     font-weight: 500;
     font-size: 64px;
     color: #3F3F3F;
+    line-height: 1.2;
   }
   p{
     font-style: normal;
