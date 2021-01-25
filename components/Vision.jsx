@@ -11,7 +11,7 @@ export default function Vision () {
             зрения
           </h1>
           <p>
-            Центре оптики «TOPALOFF» является
+            Центр оптики «TOPALOFF» является
             <br />
             одной из лидирующих фирм
             <br />

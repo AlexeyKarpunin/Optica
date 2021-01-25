@@ -11,10 +11,10 @@ export default function LogoText() {
         Федеральная сеть
         <br />
       </TextNormal> */}
-      <TextNormal>
+      {/* <TextNormal>
         центр коррекции слуха
         <br />
-      </TextNormal>
+      </TextNormal> */}
     </Text>  
   );
 } 
