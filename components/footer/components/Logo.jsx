@@ -21,6 +21,9 @@ const ImgWrraper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  span {
+    text-align: center;
+  }
   @media (max-width: 385px) {
     align-items: center;
   }

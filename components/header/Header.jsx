@@ -17,7 +17,7 @@ const Head = styled.header`
   margin: 0 auto;
   @media (min-width: 1021px) {
     position: sticky;
-    top: -55px;
+    top: -60px;
     z-index: 100;
   }
 `;
