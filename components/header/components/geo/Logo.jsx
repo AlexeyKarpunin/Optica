@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default function Logo () {
   return (
-    <ImgWrraper><img src='/img/logotip.png' alt='logo' style={{width: '150px', height: '40px'}} /></ImgWrraper>
+    <ImgWrraper><img src='/img/logotip.png' alt='logo' style={{width: '160px', height: '47px'}} /></ImgWrraper>
   );
 }
 

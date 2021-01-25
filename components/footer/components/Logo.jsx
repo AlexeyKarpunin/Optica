@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export default function Logo () {
   return (
     <LogoWrapper>
-      <ImgWrraper><img src='/img/logotip.png' alt='logo' style={{width: '150px', margin: '-5px 0 0 0'}} /></ImgWrraper>
+      <ImgWrraper><img src='/img/logo-footer.png' alt='logo' style={{width: '150px', margin: '-5px 0 0 0'}} /></ImgWrraper>
       <ul> 
         <li><Link href='/'><a>Главная</a></Link></li>
         <li><Link href='/'><a>О компании</a></Link></li>

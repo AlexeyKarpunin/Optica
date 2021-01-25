@@ -4,15 +4,15 @@ export default function LogoText() {
   return(
     <Text>
       <TextBold>
-        Атмосфера слуха
+        ЦЕНТР ОПТИКИ
         <br />
       </TextBold>
-      <TextNormal>
+      {/* <TextNormal>
         Федеральная сеть
         <br />
-      </TextNormal>
+      </TextNormal> */}
       <TextNormal>
-        центров коррекции слуха
+        центр коррекции слуха
         <br />
       </TextNormal>
     </Text>  
@@ -20,8 +20,7 @@ export default function LogoText() {
 } 
 
 const Text = styled.div`
-  margin-top: 16px;
-  margin-left: 50px;
+  margin: 16px 0 3px 50px;
   @media (max-width: 495px) {
     display: none;
   }
@@ -41,4 +40,5 @@ const TextNormal = styled.span`
   font-size: 14px;
   color: #1C626B;
   letter-spacing: 0.05em;
+  margin-bottom: 5px;
 `;
