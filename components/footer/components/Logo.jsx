@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export default function Logo () {
   return (
     <LogoWrapper>
-      <h2>Logo</h2>
-      <ul>
+      <ImgWrraper><img src='/img/logotip.png' alt='logo' style={{width: '150px', margin: '-5px 0 0 0'}} /></ImgWrraper>
+      <ul> 
         <li><Link href='/'><a>Главная</a></Link></li>
         <li><Link href='/'><a>О компании</a></Link></li>
         <li><Link href='/'><a>Скидки</a></Link></li>
@@ -14,7 +14,10 @@ export default function Logo () {
     </LogoWrapper>
   );
 }
-
+const ImgWrraper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 const LogoWrapper = styled.div`
   h2 {
     font-style: normal;

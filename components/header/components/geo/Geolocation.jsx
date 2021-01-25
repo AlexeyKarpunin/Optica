@@ -4,7 +4,7 @@ export default function Geolocation () {
   return (
     <GeoContainer>
       <City>
-        <img src='/img/Vector.png' alt='' />
+        <img src='/img/Vector.png' alt='' style={{height: '25px'}} />
         <span> Астрахань </span>
         <span>ул. Боевая, 14 </span>
       </City>
@@ -29,6 +29,10 @@ const GeoContainer = styled.div`
 
   @media (max-width: 920px) {
     margin-left: 0px;
+  }
+
+  @media (max-width: 494px) {
+    margin: 0 auto;
   }
 `;
 
@@ -77,9 +81,5 @@ const Number = styled.div`
     width: 17px;
     height: 17px;
     align-self: center;
-  }
-
-  @media (max-width: 495px) {
-    margin: 5px 0 5px 52px;
   }
 `;

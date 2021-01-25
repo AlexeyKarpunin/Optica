@@ -21,7 +21,10 @@ export default function LogoText() {
 
 const Text = styled.div`
   margin-top: 16px;
-  margin-left: -10px;
+  margin-left: 50px;
+  @media (max-width: 495px) {
+    display: none;
+  }
 `;
 
 const TextBold = styled.span`

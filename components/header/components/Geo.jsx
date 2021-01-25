@@ -19,6 +19,9 @@ export default function Geo () {
 
 const LogoWrraper = styled.div`
   display: flex;
+  @media (max-width: 494px) {
+    width: 100%;
+  }
 `;
 
 const GeoContainer = styled.div`
