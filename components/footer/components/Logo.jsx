@@ -4,7 +4,10 @@ import styled from 'styled-components';
 export default function Logo () {
   return (
     <LogoWrapper>
-      <ImgWrraper><img src='/img/logo-footer.png' alt='logo' style={{width: '150px', margin: '-5px 0 0 0'}} /></ImgWrraper>
+      <ImgWrraper>
+        <img src='/img/logo-footer.png' alt='logo' style={{width: '150px', margin: '-5px 0 0 0'}} />
+        <span>Центр оптики</span>
+      </ImgWrraper>
       <ul> 
         <li><Link href='/'><a>Главная</a></Link></li>
         <li><Link href='/'><a>О компании</a></Link></li>
@@ -17,6 +20,17 @@ export default function Logo () {
 const ImgWrraper = styled.div`
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  @media (max-width: 385px) {
+    align-items: center;
+  }
+  span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
 `;
 const LogoWrapper = styled.div`
   h2 {
