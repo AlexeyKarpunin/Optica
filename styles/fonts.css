@@ -251,7 +251,7 @@ body {
 }
 
 .is-active-nav-link::before {
-  bottom: 25px;
+  bottom: 10px;
 }
 
 @media (max-width: 1020px) {

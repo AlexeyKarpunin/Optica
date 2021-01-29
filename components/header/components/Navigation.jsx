@@ -14,26 +14,26 @@ export default function Navigation ({activeLink}) {
         <ListItem className={activeLink === 'main' ? 'is-active-nav-link' : null}>
           <Link href='/'><a>Главная</a></Link>
         </ListItem>
-        <ListItem className={activeLink === 'diagnostic' ? 'is-active-nav-link-double' : null}>
+        <ListItem className={activeLink === 'diagnostic' ? 'is-active-nav-link' : null}>
           <Link href='/vision-diagnostics'>
             <a>
               Диагностика
-              <br />
+              {/* <br />
               {' '}
-              зрения
+              зрения */}
             </a>
           </Link>
         </ListItem>
         <ListItem className={activeLink === 'lenses' ? 'is-active-nav-link' : null}>
           <Link href='/selection-of-lenses'><a>Подбор линз</a></Link>
         </ListItem>
-        <ListItem className={activeLink === 'making' ? 'is-active-nav-link-double' : null}>
+        <ListItem className={activeLink === 'making' ? 'is-active-nav-link' : null}>
           <Link href='/glasses-making'>
             <a>
               Изготовление
-              <br />
+              {/* <br />
               {' '}
-              очков
+              очков */}
             </a>
           </Link>
         </ListItem>

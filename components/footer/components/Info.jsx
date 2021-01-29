@@ -7,11 +7,11 @@ export default function Info () {
       <ul>
         <li>
           <img style={{width:'19px', height: '25px'}} src='/img/vector-white.png' alt='vector' />
-          <span>ул. Боевая, 14</span>
+          <span>ул.Боевая, 40</span>
         </li>
         <li>
           <img style={{width:'17px', height: '17px', marginTop: '3px',}} src='/img/call-white.png' alt='call' />
-          <a href='tel:8 (800) 201-06-72'>8 (800) 201-06-72</a>
+          <a href='tel: +7 988 172-87-76'>+7 988 172-87-76</a>
         </li>
       </ul>
     </InfoWrraper>

@@ -20,7 +20,7 @@ export default function LogoText() {
 } 
 
 const Text = styled.div`
-  margin: 16px 0 3px 50px;
+  margin: 10px 0 3px 50px;
 
   @media (max-width: 940px) {
     margin: 0 auto;

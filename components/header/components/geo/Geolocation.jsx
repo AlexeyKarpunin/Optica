@@ -10,7 +10,7 @@ export default function Geolocation () {
       </City>
       <Number>
         <img src='/img/call.png' alt='' />
-        <a href='tel:8 (800) 201-06-72'>+7 988 172-87-76</a>
+        <a href='tel: +7 988 172-87-76'>+7 988 172-87-76</a>
         <InstWrapper href='https://www.instagram.com/topaloff_optica/?hl=ru' target='_blank'><img src='/img/inst.png' alt='instagram' /></InstWrapper>
       </Number>
     </GeoContainer>
@@ -84,7 +84,7 @@ const Number = styled.div`
   @media (max-width: 540px) {
     margin: 0 0 0 25px;
   }
-  
+
   a {
     margin-left 11px;
     font-style: normal;
