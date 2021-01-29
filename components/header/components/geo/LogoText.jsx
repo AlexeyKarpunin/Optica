@@ -21,9 +21,11 @@ export default function LogoText() {
 
 const Text = styled.div`
   margin: 16px 0 3px 50px;
-  @media (max-width: 495px) {
-    display: none;
+
+  @media (max-width: 940px) {
+    margin: 0 auto;
   }
+  
 `;
 
 const TextBold = styled.span`
@@ -34,11 +36,11 @@ const TextBold = styled.span`
   letter-spacing: 0.05em;
 `;
 
-const TextNormal = styled.span`
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  color: #1C626B;
-  letter-spacing: 0.05em;
-  margin-bottom: 5px;
-`;
+// const TextNormal = styled.span`
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 14px;
+//   color: #1C626B;
+//   letter-spacing: 0.05em;
+//   margin-bottom: 5px;
+// `;

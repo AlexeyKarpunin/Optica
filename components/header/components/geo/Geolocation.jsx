@@ -6,15 +6,22 @@ export default function Geolocation () {
       <City>
         <img src='/img/Vector.png' alt='' style={{height: '25px'}} />
         <span> Астрахань </span>
-        <span>ул. Боевая, 14 </span>
+        <span>ул.Боевая, 40 </span>
       </City>
       <Number>
         <img src='/img/call.png' alt='' />
-        <a href='tel:8 (800) 201-06-72'>8 (800) 201-06-72</a>
+        <a href='tel:8 (800) 201-06-72'>+7 988 172-87-76</a>
+        <InstWrapper href='https://www.instagram.com/topaloff_optica/?hl=ru' target='_blank'><img src='/img/inst.png' alt='instagram' /></InstWrapper>
       </Number>
     </GeoContainer>
   );
 }
+
+const InstWrapper = styled.a`
+   margin: 1px 0 0 10px ;
+   cursor: pointer;
+
+`;
 
 const GeoContainer = styled.div`
   display: flex;
@@ -27,11 +34,15 @@ const GeoContainer = styled.div`
     justify-content: space-evenly;
   }
 
+  @media (max-width: 1020px) {
+    margin-left: 0px;
+  }
+
   @media (max-width: 920px) {
     margin-left: 0px;
   }
 
-  @media (max-width: 494px) {
+  @media (max-width: 540px) {
     margin: 0 auto;
   }
 `;
@@ -48,7 +59,7 @@ const City = styled.div`
     margin-left: 11px;
   }
 
-  @media (max-width: 744px) {
+  @media (max-width: 780px) {
     span {
       &:nth-child(2) {
         display: none;
@@ -56,7 +67,7 @@ const City = styled.div`
     }
   }
 
-  @media (max-width: 635px) {
+  @media (max-width: 670px) {
     span {
       display: none;
     }
@@ -69,6 +80,11 @@ const City = styled.div`
 const Number = styled.div`
   align-self: center;
   display: flex;
+
+  @media (max-width: 540px) {
+    margin: 0 0 0 25px;
+  }
+  
   a {
     margin-left 11px;
     font-style: normal;

@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export default function Logo () {
   return (
-    <ImgWrraper><img src='/img/logotip.png' alt='logo' style={{width: '160px', height: '47px'}} /></ImgWrraper>
+    <ImgWrraper><img src='/img/logotip.png' alt='logo' /></ImgWrraper>
   );
 }
 
@@ -11,6 +11,11 @@ const ImgWrraper = styled.div`
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
+
+  img {
+    width: 150px;
+    height: 34px;
+  }
 `;
 
 /*

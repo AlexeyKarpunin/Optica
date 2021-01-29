@@ -19,6 +19,16 @@ export default function Geo () {
 
 const LogoWrraper = styled.div`
   display: flex;
+
+  @media (max-width: 940px) {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 540px) {
+    margin-left: 0;
+  }
+
   @media (max-width: 494px) {
     width: 100%;
   }
@@ -31,6 +41,10 @@ const GeoContainer = styled.div`
 
 const LogoContainer = styled.div`
   display: flex;
+
+  @media (max-width: 540px) {
+    flex-direction: column;
+  }
 
   @media (max-width: 495px) {
     flex-direction: column;
