@@ -254,6 +254,12 @@ body {
   bottom: 25px;
 }
 
+@media (max-width: 1020px) {
+  .is-active-nav-link::before {
+    bottom: 10px;
+  }
+}
+
 
 
 
