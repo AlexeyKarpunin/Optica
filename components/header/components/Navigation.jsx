@@ -2,40 +2,53 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function Navigation () {
+export default function Navigation ({activeLink}) {
   const [mBtnStatus, setMBtnStatus] = useState(false);
 
-  function toggleMBtnMenu() {
-    mBtnStatus ? setMBtnStatus(false) : setMBtnStatus(true);
-  }
+
+  function toggleMBtnMenu() {mBtnStatus ? setMBtnStatus(false) : setMBtnStatus(true);}
 
   return(
     <NavigationContainer>
       <NavigationList status={mBtnStatus}>
-        <ListItem>
+        <ListItem className={activeLink === 'main' ? 'is-active-nav-link' : null}>
           <Link href='/'><a>Главная</a></Link>
         </ListItem>
-        <ListItem>
-          <Link href='/'><a>Салоны оптики</a></Link>
+        <ListItem className={activeLink === 'diagnostic' ? 'is-active-nav-link-double' : null}>
+          <Link href='/vision-diagnostics'>
+            <a>
+              Диагностика
+              <br />
+              {' '}
+              зрения
+            </a>
+          </Link>
         </ListItem>
-        <ListItem>
-          <Link href='/'><a>О компании</a></Link>
+        <ListItem className={activeLink === 'lenses' ? 'is-active-nav-link' : null}>
+          <Link href='/selection-of-lenses'><a>Подбор линз</a></Link>
         </ListItem>
-        <ListItem>
-          <Link href='/'><a>События и скидки</a></Link>
+        <ListItem className={activeLink === 'making' ? 'is-active-nav-link-double' : null}>
+          <Link href='/glasses-making'>
+            <a>
+              Изготовление
+              <br />
+              {' '}
+              очков
+            </a>
+          </Link>
         </ListItem>
-        <ListItem>
-          <Link href='/'><a>Видео</a></Link>
+        <ListItem className={activeLink === 'tinting' ? 'is-active-nav-link' : null}>
+          <Link href='/lens-tinting'><a>Тонировка линз</a></Link>
         </ListItem>
-        <ListItem>
-          <Link href='/'><a>Документы</a></Link>
+        <ListItem className={activeLink === 'componi' ? 'is-active-nav-link' : null}>
+          <Link href='/about-compni'><a>О компании</a></Link>
         </ListItem>
-        <ListItem>
-          <Link href='/'><a>Контакты</a></Link>
+        <ListItem className={activeLink === 'contacts' ? 'is-active-nav-link' : null}>
+          <Link href='/contacts'><a>Контакты</a></Link>
         </ListItem>
       </NavigationList>
       <MobileBtn onClick={toggleMBtnMenu}>
-        <svg className={ mBtnStatus ? 'ham hamRotate ham1 active' : 'ham hamRotate ham1'} viewBox='0 0 100 100' width='50'>
+        <svg className={mBtnStatus ? 'ham hamRotate ham1 active' : 'ham hamRotate ham1'} viewBox='0 0 100 100' width='50'>
           <path
             className='line top'
             d='m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40'
@@ -84,6 +97,8 @@ const NavigationList = styled.ul`
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+  
+  
 
   @media (max-width: 1020px) {
     position: fixed;
@@ -107,6 +122,8 @@ const NavigationList = styled.ul`
 
 const ListItem = styled.li`
   padding: 15px 0 15px 0;
+  position: relative;
+  text-align: center;
   a {
     font-style: normal;
     font-weight: bold;

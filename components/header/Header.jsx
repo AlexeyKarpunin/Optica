@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import Geo from './components/Geo';
 import Navigation from './components/Navigation'; 
 
-export default function Header () {
+export default function Header ({activeLink}) {
   return (
     <Head>
       <Geo />
-      <Navigation />
+      <Navigation activeLink={activeLink} />
     </Head>
   )
 }

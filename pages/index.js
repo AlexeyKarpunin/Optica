@@ -10,10 +10,11 @@ import styled from 'styled-components';
 import '../styles/fonts.css';
 
 export default function Home() {
+
   return (
     <>
       <Head />
-      <Header />
+      <Header activeLink='main' />
       <Vision />
       <BackgroundWrraper>
         <Services />
