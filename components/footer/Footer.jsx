@@ -4,10 +4,10 @@ import Goods from './components/Goods';
 import Services from './components/Services';
 import Info from './components/Info';
 
-export default function Footer () {
+export default function Footer ({bigPadding}) {
   return (
     <FooterSection>
-      <FooterContainer>
+      <FooterContainer padding={bigPadding}>
         <Logo />
         <Goods />
         <Services />
@@ -30,20 +30,20 @@ const FooterContainer = styled.div`
   padding: 47px 0 0 0;
 
   @media (max-width: 1124px) {
-    padding: 200px 0 0 0;
+    padding: ${props => props.padding ? '200px' : '50px'} 0 0 0;
   }
 
   @media (max-width: 1050px) {
     flex-wrap: wrap;
-    padding: 200px 15px 0 15px;
+    padding: ${props => props.padding ? '200px' : '50px'} 15px 0 15px;
   }
 
   @media (max-width: 590px) {
-    padding: 250px 15px 15px 15px;
+    padding: ${props => props.padding ? '250px' : '50px'} 15px 15px 15px;
   }
 
   @media (max-width: 410px) {
-    padding: 320px 15px 15px 15px;
+    padding: ${props => props.padding ? '320px' : '50px'} 15px 15px 15px;
   }
 
   @media (max-width: 385px) {

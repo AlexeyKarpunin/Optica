@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import styled from 'styled-components';
 import Header from '../components/header/Header';
 import Vision from '../components/Vision';
 import Services from '../components/services/Services';
@@ -6,7 +7,6 @@ import Offers from '../components/Offers';
 import Wait from '../components/Wait';
 import Ask from '../components/ask/Ask'
 import Footer from '../components/footer/Footer';
-import styled from 'styled-components';
 import '../styles/fonts.css';
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
         <Wait /> 
       </BackgroundWrraper>
       <Ask />
-      <Footer />
+      <Footer bigPadding={true} />
     </>
   )
 }
