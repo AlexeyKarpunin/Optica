@@ -26,7 +26,7 @@ export default function Vision () {
 const VisionSection = styled.section`
   max-width: 1920px;
   margin: 0 auto;
-  background: url('/img/vision.jpg');
+  background: url('/img/vision/vision-back.jpg');
   height: 628px;
   background-position: center;
   background-size: cover;
@@ -43,7 +43,7 @@ const VisionContent = styled.div`
 `;
 const VisionText = styled.div`
   max-width: 450px;
-  padding: 112px 0 0 51px;
+  padding: 112px 0 0 0px;
   h1{
     margin: 0;
     font-style: normal;

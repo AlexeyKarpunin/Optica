@@ -13,7 +13,7 @@ export default function info() {
           <p>Современные комфортные и надёжные контактные линзы для глаз помогут Вам увидеть мир во всех красках😍 Используются линзы вместо обычных очков в лечебно-терапевтических, а также декоративных целях👌</p>
         </InfoWrraper>
         <ImgWrraper>
-          <img src='/img/selection-of-lenses/women.jpg' alt='women' />
+          <img src='/img/selection-of-lenses/check-eyes.jpg' alt='women' />
           <img src='/img/about-componi/modal-back.png' alt='' />
         </ImgWrraper>
       </InfoContainer>

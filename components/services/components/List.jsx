@@ -102,7 +102,7 @@ const BigLi = styled.li`
   }
  
   &:nth-child(4) {
-    background: url('/img/services/check-vision.png') no-repeat;
+    background: url('/img/services/check-vision2.png') no-repeat;
   }
 
   @media (max-width: 825px) {

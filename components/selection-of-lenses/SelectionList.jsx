@@ -24,7 +24,7 @@ export default function SelectionList () {
 
 const SelectionSection = styled.section`
   max-width: 1920px;
-  margin: o auto;
+  margin: 0 auto;
 `;
 
 const SelectionContainer = styled.div`

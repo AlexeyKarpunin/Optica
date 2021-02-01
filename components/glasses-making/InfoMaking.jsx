@@ -105,7 +105,6 @@ const ImgWrraper = styled.div`
       position: absolute;
       top: -42px;
       right: -63px;
-      z-index: -1;
 
       @media (max-width: 1300px) {
         display: none;
