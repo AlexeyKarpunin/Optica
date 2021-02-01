@@ -4,17 +4,9 @@ export default function LogoText() {
   return(
     <Text>
       <TextBold>
-        ЦЕНТР ОПТИКИ
+        ЦЕНТР ОПТИЧЕСКОЙ КОРРЕКЦИИ
         <br />
       </TextBold>
-      {/* <TextNormal>
-        Федеральная сеть
-        <br />
-      </TextNormal> */}
-      {/* <TextNormal>
-        центр коррекции слуха
-        <br />
-      </TextNormal> */}
     </Text>  
   );
 } 
@@ -24,6 +16,10 @@ const Text = styled.div`
 
   @media (max-width: 940px) {
     margin: 0 auto;
+  }
+
+  @media (max-width: 310px){
+    text-align: center;
   }
   
 `;
@@ -36,11 +32,4 @@ const TextBold = styled.span`
   letter-spacing: 0.05em;
 `;
 
-// const TextNormal = styled.span`
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 14px;
-//   color: #1C626B;
-//   letter-spacing: 0.05em;
-//   margin-bottom: 5px;
-// `;
+

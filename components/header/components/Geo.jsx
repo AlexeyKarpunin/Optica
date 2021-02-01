@@ -42,13 +42,8 @@ const GeoContainer = styled.div`
 const LogoContainer = styled.div`
   display: flex;
 
-  @media (max-width: 540px) {
+  @media (max-width: 630px) {
     flex-direction: column;
-  }
-
-  @media (max-width: 495px) {
-    flex-direction: column;
-    align-items: flex-start;
   }
 `;
 

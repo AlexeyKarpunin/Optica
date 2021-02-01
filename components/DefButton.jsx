@@ -1,11 +1,12 @@
 
+import Link from 'next/link';
 import styled from 'styled-components';
 
-export default function DefButton ({text, styles}) {
+export default function DefButton ({text, styles, link, onClickFunc}) {
 
   return (
     <Button styles={styles}>
-      {text}
+      <Link onClick={onClickFunc ? onClickFunc : null} href={link ? link : '/'}>{text}</Link>
     </Button>
   );
 }

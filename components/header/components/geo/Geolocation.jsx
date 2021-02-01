@@ -25,21 +25,12 @@ const InstWrapper = styled.a`
 
 const GeoContainer = styled.div`
   display: flex;
-  margin-left: 156px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-width: 770px;
   flex-grow: 1;
 
-  @media (max-width: 1160px) {
-    justify-content: space-evenly;
-  }
-
   @media (max-width: 1020px) {
-    margin-left: 0px;
-  }
-
-  @media (max-width: 920px) {
-    margin-left: 0px;
+    justify-content: center;
   }
 
   @media (max-width: 540px) {
@@ -59,7 +50,7 @@ const City = styled.div`
     margin-left: 11px;
   }
 
-  @media (max-width: 780px) {
+  @media (max-width: 1020px) {
     span {
       &:nth-child(2) {
         display: none;
@@ -67,7 +58,7 @@ const City = styled.div`
     }
   }
 
-  @media (max-width: 670px) {
+  @media (max-width: 1020px) {
     span {
       display: none;
     }
@@ -81,7 +72,7 @@ const Number = styled.div`
   align-self: center;
   display: flex;
 
-  @media (max-width: 540px) {
+  @media (max-width: 630px) {
     margin: 0 0 0 25px;
   }
 
