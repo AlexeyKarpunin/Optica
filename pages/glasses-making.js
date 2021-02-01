@@ -16,7 +16,7 @@ export default function Home() {
       <Header activeLink='making' />
       <InfoMaking />
       <Pricemaking />
-      <Choose />
+      {/* <Choose /> */}
       <If />
       <Consultation />
       <Footer />

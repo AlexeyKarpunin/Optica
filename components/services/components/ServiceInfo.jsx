@@ -31,10 +31,14 @@ export default function Serviceinfo () {
 
       <Service>
         <div>
-          <img style={{width: '85px', height: '65px'}} src='/img/17.png' alt='17' />
+          <img style={{width: '72px', height: '82px'}} src='/img/portrait.png' alt='portrait' />
         </div>
         <p>
-          лет на рынке
+          Опытные 
+          {' '}
+          <br />
+          {' '}
+          специалисты
         </p>
       </Service> 
 

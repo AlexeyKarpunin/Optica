@@ -13,7 +13,7 @@ export default function info() {
           <p>Проведем тщательное и максимально объективное обследование Вашей зрительной системы и обеспечим точную постановку диагноза даже на самых ранних стадиях развития заболевания. Только такой подход станет залогом правильного и по-настоящему эффективного лечения!</p>
         </InfoWrraper>
         <ImgWrraper>
-          <img src='/img/selection-of-lenses/women.jpg' alt='women' />
+          <img src='/img/selection-of-lenses/check-eyes.jpg' alt='women' />
           <img src='/img/about-componi/modal-back.png' alt='' />
         </ImgWrraper>
       </InfoContainer>
