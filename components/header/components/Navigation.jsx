@@ -35,7 +35,7 @@ export default function Navigation ({activeLink}) {
           <Link href='/lens-tinting'><a>Тонировка линз</a></Link>
         </ListItem>
         <ListItem className={activeLink === 'componi' ? 'is-active-nav-link' : null}>
-          <Link href='/about-compni'><a>О компании</a></Link>
+          <Link href='/about-componi'><a>О компании</a></Link>
         </ListItem>
         <ListItem className={activeLink === 'contacts' ? 'is-active-nav-link' : null}>
           <Link href='/contacts'><a>Контакты</a></Link>
