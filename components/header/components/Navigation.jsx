@@ -91,7 +91,7 @@ const NavigationList = styled.ul`
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  
+  padding: 0 5px;
   
 
   @media (max-width: 1020px) {
