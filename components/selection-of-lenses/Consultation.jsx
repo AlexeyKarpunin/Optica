@@ -11,17 +11,17 @@ export default function Consultation () {
             На любые Ваши вопросы мы с радостью ответим по телефону 
             {' '}
             <br />
-            <a href='tel:8 (800) 201-06-72'>8 (800) 201-06-72</a>  
+            <a href='tel:+7 988 172-87-76'>+7 988 172-87-76</a>  
             {' '}
             <br />
             или в нашем салоне оптики по адресу   
             {' '}
             <br />
-            г. Астрахань, ул. Боевая, 14  
+            г. Астрахань, ул.Боевая, 40  
             {' '}
             <br />
           </p>
-          <DefButton text='Заказать звонок' styles='padding: 18px 40px; box-shadow: inset 0px -1px 3px rgba(255, 255, 255, 0.2); filter: drop-shadow(0px 19px 15px rgba(0, 0, 0, 0.15));' />
+          <DefButton text='Записаться на бесплатную консультацию' styles='padding: 18px 40px; box-shadow: inset 0px -1px 3px rgba(255, 255, 255, 0.2); filter: drop-shadow(0px 19px 15px rgba(0, 0, 0, 0.15)); @media(max-width: 480px){ max-width: 270px;}' />
         </Info>
       </ConsContainer>
     </ConsSection>

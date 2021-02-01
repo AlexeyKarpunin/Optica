@@ -17,23 +17,17 @@ export default function Navigation ({activeLink}) {
         <ListItem className={activeLink === 'diagnostic' ? 'is-active-nav-link' : null}>
           <Link href='/vision-diagnostics'>
             <a>
-              Диагностика
-              {/* <br />
-              {' '}
-              зрения */}
+              Диагностика зрения
             </a>
           </Link>
         </ListItem>
         <ListItem className={activeLink === 'lenses' ? 'is-active-nav-link' : null}>
-          <Link href='/selection-of-lenses'><a>Подбор линз</a></Link>
+          <Link href='/selection-of-lenses'><a>Подбор оправ</a></Link>
         </ListItem>
         <ListItem className={activeLink === 'making' ? 'is-active-nav-link' : null}>
           <Link href='/glasses-making'>
             <a>
-              Изготовление
-              {/* <br />
-              {' '}
-              очков */}
+              Изготовление очков
             </a>
           </Link>
         </ListItem>
@@ -93,7 +87,7 @@ const NavigationContainer = styled.div`
 
 const NavigationList = styled.ul`
   list-style: none;
-  max-width: 940px;
+  max-width: 1170px;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
