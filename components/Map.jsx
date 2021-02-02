@@ -6,13 +6,12 @@ export default function Map () {
       <MapContainer>
         <h1>Контакты</h1>
         {/* <iframe frameBorder='no' width='100%' height='605' src='https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A46.33896038641083%2C%22lon%22%3A48.022347451696994%2C%22zoom%22%3A17%7D%2C%22opt%22%3A%7B%22city%22%3A%22astrakhan%22%7D%2C%22org%22%3A%221126429188192120%22%7D' /> */}
-        <iframe frameBorder='no' style={{border: '1px solid #a3a3a3', boxSizing: 'border-box', maxWidth: '1170px'}} width='100%' height='605' src='http://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A46.337485615138434%2C%22lon%22%3A48.02098810410827%2C%22zoom%22%3A18%7D%2C%22opt%22%3A%7B%22city%22%3A%22astrakhan%22%7D%2C%22org%22%3A%221126429188192120%22%7D' />
+        <iframe title='map' frameBorder='no' style={{border: '1px solid #a3a3a3', boxSizing: 'border-box', maxWidth: '1170px'}} width='100%' height='605' src='https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A46.337485615138434%2C%22lon%22%3A48.02098810410827%2C%22zoom%22%3A18%7D%2C%22opt%22%3A%7B%22city%22%3A%22astrakhan%22%7D%2C%22org%22%3A%221126429188192120%22%7D' />
       </MapContainer>
     </MapSection>
   );
 }
 
-// 
 
 const MapSection = styled.section`
   max-width: 1920px;
