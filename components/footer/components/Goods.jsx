@@ -6,7 +6,7 @@ export default function Goods () {
     <GoodsWrraper>
       <h2>Продукция</h2>
       <ul>
-        <li><Link href='/'><a>Слуховые аппараты</a></Link></li>
+        <li><Link href='/'><a>Меню оптики</a></Link></li>
         <li><Link href='/'><a>Реабилитационная техника</a></Link></li>
         <li><Link href='/'><a>Элементы питания</a></Link></li>
         <li><Link href='/'><a>Средства по уходу</a></Link></li>

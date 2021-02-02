@@ -10,9 +10,9 @@ export default function Logo () {
       </ImgWrraper>
       <ul> 
         <li><Link href='/'><a>Главная</a></Link></li>
-        <li><Link href='/'><a>О компании</a></Link></li>
+        <li><Link href='/about-componi'><a>О компании</a></Link></li>
         <li><Link href='/'><a>Скидки</a></Link></li>
-        <li><Link href='/'><a>Контакты</a></Link></li>
+        <li><Link href='/contacts'><a>Контакты</a></Link></li>
       </ul>
     </LogoWrapper>
   );
