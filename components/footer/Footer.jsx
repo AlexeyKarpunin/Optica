@@ -9,7 +9,7 @@ export default function Footer ({bigPadding}) {
     <FooterSection>
       <FooterContainer padding={bigPadding}>
         <Logo />
-        <Goods />
+        {/* <Goods /> */}
         <Services />
         <Info />
       </FooterContainer>

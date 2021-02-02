@@ -6,11 +6,11 @@ export default function Servisec () {
     <ServisecWrraper>
       <h2>Услуги</h2>
       <ul>
-        <li><Link href='/'><a>Проверка слуха</a></Link></li>
-        <li><Link href='/'><a>Выезд на дом</a></Link></li>
-        <li><Link href='/'><a>Бесплатная консультация</a></Link></li>
-        <li><Link href='/'><a>Компенсация от ФСС</a></Link></li>
-        <li><Link href='/'><a>Беспроцентная рассрочка</a></Link></li>
+        <li><Link href='/vision-diagnostics'><a>Диагностика зрения</a></Link></li>
+        <li><Link href='/selection-of-lenses'><a>Подбор оправ</a></Link></li>
+        <li><Link href='/glasses-making'><a>Изготовление очков</a></Link></li>
+        <li><Link href='/lens-tinting'><a>Тонировка линз</a></Link></li>
+        <li><Link href='/about-componi'><a>О компании</a></Link></li>
       </ul>
     </ServisecWrraper>
   );

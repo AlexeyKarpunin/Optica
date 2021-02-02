@@ -6,12 +6,11 @@ export default function Logo () {
     <LogoWrapper>
       <ImgWrraper>
         <img src='/img/logo-footer.png' alt='logo' style={{width: '150px', margin: '-5px 0 0 0'}} />
-        <span>Центр оптики</span>
+        <span>ЦЕНТР ОПТИЧЕСКОЙ КОРРЕКЦИИ</span>
       </ImgWrraper>
       <ul> 
         <li><Link href='/'><a>Главная</a></Link></li>
         <li><Link href='/about-componi'><a>О компании</a></Link></li>
-        <li><Link href='/'><a>Скидки</a></Link></li>
         <li><Link href='/contacts'><a>Контакты</a></Link></li>
       </ul>
     </LogoWrapper>
