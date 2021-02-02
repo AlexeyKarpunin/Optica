@@ -10,7 +10,7 @@ export default function Servisec () {
         <li><Link href='/selection-of-lenses'><a>Подбор оправ</a></Link></li>
         <li><Link href='/glasses-making'><a>Изготовление очков</a></Link></li>
         <li><Link href='/lens-tinting'><a>Тонировка линз</a></Link></li>
-        <li><Link href='/about-componi'><a>О компании</a></Link></li>
+        {/* <li><Link href='/about-componi'><a>О компании</a></Link></li> */}
       </ul>
     </ServisecWrraper>
   );
