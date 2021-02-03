@@ -5,8 +5,8 @@ import styled from 'styled-components';
 export default function DefButton ({text, styles, link, onClickFunc}) {
 
   return (
-    <Link onClick={onClickFunc || null} href={link || '/'}>
-      <Button styles={styles}>{text}</Button>
+    <Link href={link || '/'}>
+      <Button onClick={onClickFunc || null} styles={styles}>{text}</Button>
     </Link>
   );
 }

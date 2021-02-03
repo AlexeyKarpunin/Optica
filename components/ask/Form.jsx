@@ -1,7 +1,26 @@
 import styled from 'styled-components';
 import DefButton from '../DefButton';
+import sendForm from '../../API/api';
 
 export default function Form () {
+  
+  async function  ClickSendForm(e) {
+    e.preventDefault();
+    
+    const text = {
+      name: 'Alex',
+      phone: '0000'
+    }
+
+    fetch('api/send-form', {
+      method: 'POST', 
+      body: JSON.stringify(text), // данные могут быть 'строкой' или {объектом}!
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+  }
+
   return (
     <FormWrapper>
       <h2>
@@ -17,6 +36,8 @@ export default function Form () {
       <DefButton 
         text='Оставить заявку'
         styles='padding: 19px 64px;box-shadow: inset 0px -1px 3px rgba(255, 255, 255, 0.2);filter: drop-shadow(0px 19px 15px rgba(0, 0, 0, 0.15));'
+        onClickFunc={ClickSendForm}
+        link={null}
       />
       <Rectangle src='/img/blue-rectangle.png' alt='blue rectangle' />
       <Glasses src='/img/glasses.png' alt='glasses' />
