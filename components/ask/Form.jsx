@@ -12,7 +12,7 @@ export default function Form () {
       phone: '0000'
     }
 
-    fetch('api/send-form', {
+    fetch('/api/send-form', {
       method: 'POST', 
       body: JSON.stringify(text), // данные могут быть 'строкой' или {объектом}!
       headers: {
