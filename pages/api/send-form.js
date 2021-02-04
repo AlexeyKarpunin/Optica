@@ -40,7 +40,7 @@ export default async (req, res) => {
   
     const result = await transporter.sendMail({
       from: '"Topallof" <Topallof@example.com>',
-      to: 'info@bzcekh.ru',
+      to: 'info@bzcekh.ru', // info@bzcekh.ru
       subject: 'Message from Topallof',
       text: 'This message was sent from Topallof.',
       html: massege

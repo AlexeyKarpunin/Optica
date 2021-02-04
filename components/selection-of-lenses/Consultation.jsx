@@ -1,7 +1,17 @@
 import styled from 'styled-components'
 import DefButton from '../DefButton';
+import Form from '../ask/Form';
+import { useState } from 'react';
 
 export default function Consultation () {
+
+  const [formStatus, setFormStatus] = useState('hidden');
+
+  function makeAnAppointment (e) {
+    e.preventDefault();
+    setFormStatus('active')
+  }
+
   return (
     <ConsSection>
       <ConsContainer>
@@ -21,8 +31,15 @@ export default function Consultation () {
             {' '}
             <br />
           </p>
-          <DefButton text='Записаться на бесплатную консультацию' styles='padding: 18px 40px; box-shadow: inset 0px -1px 3px rgba(255, 255, 255, 0.2); filter: drop-shadow(0px 19px 15px rgba(0, 0, 0, 0.15)); @media(max-width: 480px){ max-width: 270px;}' />
+          <DefButton 
+            text='Записаться на бесплатную консультацию' 
+            styles='padding: 18px 40px; box-shadow: inset 0px -1px 3px rgba(255, 255, 255, 0.2); filter: drop-shadow(0px 19px 15px rgba(0, 0, 0, 0.15)); @media(max-width: 480px){ max-width: 270px;}'
+            onClickFunc={makeAnAppointment}
+          />
         </Info>
+        <Hidden status={formStatus}>
+          <Form />
+        </Hidden>
       </ConsContainer>
     </ConsSection>
   )
@@ -38,12 +55,45 @@ const ConsContainer = styled.div`
   margin: 0 auto;
 `;
 
+const Hidden = styled.div`
+overflow: hidden;
+padding: 10px 0 57px 62px;
+margin-top: ${props => props.status === 'active' ? '0' : '-680px;'}
+transition: 2s; 
+
+form {
+  position: inherit;
+  transform: ${props => props.status === 'active' ? 'translateY(0px);' : 'translateY(-900px);'}
+  transition: 2s; 
+  
+  h2 {
+    font-size: 32px;
+  }
+
+  img {
+    display: none;
+  }
+}  
+
+@media (max-width: 480px) {
+  padding: 10px 0 57px 20px;
+}
+
+@media (max-width: 440px) {
+  padding: 10px 0 57px 0px;
+
+  form {
+    margin: 0 auto;
+  }
+}
+
+`;
+
 const Info = styled.div`
    background: url(/img/consultation/women-with-glases.jpg) no-repeat;
    background-size: cover;
    padding: 10px 0 57px 62px;
-   margin-bottom: 100px;
-
+   
    h2 {
     font-style: normal;
     font-weight: bold;
