@@ -75,4 +75,10 @@ const DeviationsList = styled.div`
       padding: 0 10px;
     }
   }
+
+  @media (max-width: 520px) {
+    h2 {
+      font-size: 26px;
+    }
+  }
 `;

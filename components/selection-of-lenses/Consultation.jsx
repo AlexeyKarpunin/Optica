@@ -7,7 +7,9 @@ import Form from '../ask/Form';
 export default function Consultation () {
 
   const [formStatus, setFormStatus] = useState('hidden');
+  const [formWasSend, setWas] = useState(false);
   const sendStatusForm = useSelector( (state) => state.form.formStatus);
+   
 
   function makeAnAppointment (e) {
     e.preventDefault();
@@ -15,7 +17,10 @@ export default function Consultation () {
   }
 
   useEffect( () => {
-    if (sendStatusForm === 'send') setTimeout( () => setFormStatus('hidden'), 3500) ;
+    if (sendStatusForm === 'send') {
+      setWas(true);
+      setTimeout( () => setFormStatus('hidden'), 500)
+    } ;
   }, [sendStatusForm])
 
   return (
@@ -38,7 +43,7 @@ export default function Consultation () {
             <br />
           </p>
           <DefButton 
-            text='Записаться на бесплатную консультацию' 
+            text={ formWasSend  ? 'Заявка отправлена' : 'Записаться на бесплатную консультацию'}
             styles='padding: 18px 40px; box-shadow: inset 0px -1px 3px rgba(255, 255, 255, 0.2); filter: drop-shadow(0px 19px 15px rgba(0, 0, 0, 0.15)); @media(max-width: 480px){ max-width: 270px;}'
             onClickFunc={makeAnAppointment}
           />
