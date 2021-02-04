@@ -28,9 +28,11 @@ export default function Form () {
       }
     }).then(( response ) => response.json()).then((data) => {
       setFormStatus(data.message);
-      refName.current.value = '';
-      refPhone.current.value = '';
-      refComment.current.value = '';
+      if (formStatus ==='success' || formStatus === 'server erorr') {
+        refName.current.value = '';
+        refPhone.current.value = '';
+        refComment.current.value = '';
+      }
     })
   }
 
