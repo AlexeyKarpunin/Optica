@@ -1,16 +1,22 @@
 import styled from 'styled-components'
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import DefButton from '../DefButton';
 import Form from '../ask/Form';
-import { useState } from 'react';
 
 export default function Consultation () {
 
   const [formStatus, setFormStatus] = useState('hidden');
+  const sendStatusForm = useSelector( (state) => state.form.formStatus);
 
   function makeAnAppointment (e) {
     e.preventDefault();
     setFormStatus('active')
   }
+
+  useEffect( () => {
+    if (sendStatusForm === 'send') setTimeout( () => setFormStatus('hidden'), 3500) ;
+  }, [sendStatusForm])
 
   return (
     <ConsSection>

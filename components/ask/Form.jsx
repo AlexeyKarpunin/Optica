@@ -1,16 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import InputMask from 'react-input-mask';
+import { useDispatch, useSelector } from 'react-redux';
 import DefButton from '../DefButton';
+import {sendForm} from '../../redux/actions';
 
 export default function Form () {
   
   const [formStatus, setFormStatus] = useState('default');
-
+  
+  const sendStatusForm = useSelector( (state) => state.form.formStatus);
   const refName = React.createRef();
   const refPhone = React.createRef();
   const refComment = React.createRef();
  
+  const dispatch = useDispatch();
+
   async function  ClickSendForm(e) {
     e.preventDefault();
 
@@ -19,6 +24,7 @@ export default function Form () {
       phone: refPhone.current.value,
       comment: refComment.current.value
     }
+   
 
     fetch('/api/send-form', {
       method: 'POST', 
@@ -28,13 +34,22 @@ export default function Form () {
       }
     }).then(( response ) => response.json()).then((data) => {
       setFormStatus(data.message);
-      if (formStatus ==='success' || formStatus === 'server erorr') {
-        refName.current.value = '';
-        refPhone.current.value = '';
-        refComment.current.value = '';
+      if (data.message === 'success' || data.message === 'server erorr') {
+        setTimeout( () => {setFormStatus('default')}, 3500)
+        dispatch(sendForm());
       }
     })
   }
+
+  useEffect( () => {
+    if (sendStatusForm === 'send') {
+      refName.current.value = '';
+      refPhone.current.value = '';
+      refComment.current.value = '';
+    };
+  }, [sendStatusForm])
+ 
+
 
   return (
     <FormWrapper status={formStatus}>
