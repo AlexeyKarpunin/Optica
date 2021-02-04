@@ -1,37 +1,62 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import sendForm from '../../API/api';
-
 const nodemailer = require('nodemailer');
 
+function validation(name, phone, comment) {
+
+  if (name.length < 2) {return 'incorrect name';}
+  if (typeof name !== 'string') {return 'incorrect name';}
+
+  if (phone.length < 12) {return 'incorrect phone'}
+  if (typeof phone !== 'string') {return 'incorrect phone';}
+  if (phone.split('').filter( (num) => num !== '_' ).length < 12) {return 'incorrect phone';}
+
+  if (typeof comment !== 'string') {return 'incorrect comment';}
+  if (comment.length > 300) {return 'incorrect comment'}
+
+  return 'success';
+}
+
 export default async (req, res) => {
-  const data = req.body;
+  const {name, phone, comment} = req.body;
 
-  // const testEmailAccount = await nodemailer.createTestAccount();
+  const massege = `
+  <ul style='list-style: none; font-style: normal; font-weight: 500; font-size: 20px; line-height: 140%; color: #1C8594;'>
+    <li>name:  ${name}</li>
+    <li>phone:  ${phone}</li>
+    <li>comment:  ${comment}</li>
+  </ul>
+  `;
 
-  const transporter = nodemailer.createTransport({
-    host: 'imap.yandex.ru',
-    port: 993,
-    secure: true,
-    auth: {
-      user: 'AlexKarpuninAA',
-      pass: 'lesha1997'
+  const validationStatus = validation(name, phone, comment);
+
+  if (validationStatus === 'success') {
+
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+          user: 'alexkarpuninaa@gmail.com',
+          pass: 'jgkgsnbsebqskirr'
+        }
+    });
+  
+    const result = await transporter.sendMail({
+      from: '"Topallof" <Topallof@example.com>',
+      to: 'info@bzcekh.ru',
+      subject: 'Message from Topallof',
+      text: 'This message was sent from Topallof.',
+      html: massege
+    });
+  
+    const status = await result;
+  
+    if (status) {
+      res.json({message: 'success'})
+    } else {
+      res.json({message: 'server erorr'})
     }
-  });
-
-  const result = await transporter.sendMail({
-    from: '"Topallof" <Topallof@example.com>',
-    to: 'mr.offlain@mail.ru',
-    subject: 'Message from Node js',
-    text: 'This message was sent from Topallof js server.',
-    html: 'This <i>message</i> was sent from <strong>Topallof js</strong> server.'
-  });
-
-  const status = await result;
-  if (status) {
-    res.json({message: 'YES'})
   } else {
-    res.json({message: 'NOT'})
+      res.json({message: validationStatus})
   }
-  console.log(result);
  
 }
+
+

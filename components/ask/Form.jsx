@@ -1,28 +1,41 @@
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import InputMask from 'react-input-mask';
 import DefButton from '../DefButton';
-import sendForm from '../../API/api';
 
 export default function Form () {
   
+  const [formStatus, setFormStatus] = useState('default');
+
+  const refName = React.createRef();
+  const refPhone = React.createRef();
+  const refComment = React.createRef();
+ 
   async function  ClickSendForm(e) {
     e.preventDefault();
-    
-    const text = {
-      name: 'Alex',
-      phone: '0000'
+
+    const info = {
+      name: refName.current.value,
+      phone: refPhone.current.value,
+      comment: refComment.current.value
     }
 
     fetch('/api/send-form', {
       method: 'POST', 
-      body: JSON.stringify(text), // данные могут быть 'строкой' или {объектом}!
+      body: JSON.stringify(info),
       headers: {
         'Content-Type': 'application/json'
       }
-    });
+    }).then(( response ) => response.json()).then((data) => {
+      setFormStatus(data.message);
+      refName.current.value = '';
+      refPhone.current.value = '';
+      refComment.current.value = '';
+    })
   }
 
   return (
-    <FormWrapper>
+    <FormWrapper status={formStatus}>
       <h2>
         Заполните форму
         <br />
@@ -30,9 +43,9 @@ export default function Form () {
         <br />
         <span>в ближайшее время</span>
       </h2>
-      <input type='text' placeholder='Ваша ФИО' />
-      <input type='text' placeholder='Ваш номер телефона' />
-      <textarea type='text' placeholder='Ваш комментарий' />
+      <input ref={refName} type='text' placeholder='Ваша ФИО' />
+      <InputMask ref={refPhone} mask='+79999999999' placeholder='Ваш номер телефона' type='text' />
+      <textarea ref={refComment} type='text' placeholder='Ваш комментарий' />
       <DefButton 
         text='Оставить заявку'
         styles='padding: 19px 64px;box-shadow: inset 0px -1px 3px rgba(255, 255, 255, 0.2);filter: drop-shadow(0px 19px 15px rgba(0, 0, 0, 0.15));'
@@ -41,9 +54,38 @@ export default function Form () {
       />
       <Rectangle src='/img/blue-rectangle.png' alt='blue rectangle' />
       <Glasses src='/img/glasses.png' alt='glasses' />
+      <ModalForm status={formStatus}>
+        <div>
+          {formStatus === 'success' ? 'Форма отправленна' : ' '}
+          {formStatus === 'server erorr' ? 'Ошибка сервера повторите отправку позже' : ' '}
+        </div>
+      </ModalForm>
     </FormWrapper>
   );
 };
+
+const ModalForm = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: ${props => props.status === 'success' || props.status === 'server erorr' ? '10' : '-1'};
+  background: #FFFEFE;
+  box-shadow: 0px 13px 25px rgba(0, 0, 0, 0.25);
+
+  div {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #1C8594;
+  }
+`;
 
 const Glasses = styled.img`
   position: absolute;
@@ -54,6 +96,7 @@ const Glasses = styled.img`
     display: none;
   }
 `;
+
 const Rectangle = styled.img`
   position: absolute;
   top: -85px;
@@ -101,6 +144,7 @@ const FormWrapper = styled.form`
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
+    border: ${props => props.status === 'incorrect comment' ? '1px solid red' : null}
   }
 
   input {
@@ -112,6 +156,15 @@ const FormWrapper = styled.form`
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
+    
+    
+    &:nth-child(2) {
+      border: ${props => props.status === 'incorrect name' ? '1px solid red' : null}
+    }
+
+    &:nth-child(3) {
+      border: ${props => props.status === 'incorrect phone' ? '1px solid red' : null}
+    }
   }
 
   textarea::placeholder {
