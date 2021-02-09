@@ -8,7 +8,7 @@ export default function Offers () {
       <OffersContainer>
         <OffersVideo>
           <VidioBox>
-            <img src='/img/play.png' alt='play' />
+            {/* <img src='/img/play.png' alt='play' /> */}
           </VidioBox>
           <DefButton 
             text='Записаться на прием'
@@ -61,7 +61,7 @@ const VidioBox = styled.div`
   height: 433px;
   margin-right: 78px;
   position: relative;
-  background: url(/img/checking-see.jpg);
+  background: url(/img/glass-and-women.jpg);
   img {
     margin: auto;
     position: absolute;

@@ -6,7 +6,7 @@ export default function Servisec () {
     <ServisecWrraper>
       <h2>Услуги</h2>
       <ul>
-        <li><Link href='/vision-diagnostics'><a>Диагностика зрения</a></Link></li>
+        {/* <li><Link href='/vision-diagnostics'><a>Диагностика зрения</a></Link></li> */}
         <li><Link href='/selection-of-lenses'><a>Подбор оправ</a></Link></li>
         <li><Link href='/glasses-making'><a>Изготовление очков</a></Link></li>
         <li><Link href='/lens-tinting'><a>Тонировка линз</a></Link></li>

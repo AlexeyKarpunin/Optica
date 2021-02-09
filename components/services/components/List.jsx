@@ -47,9 +47,7 @@ export default function List () {
         </SmallLi>
         <BigLi>
           <p>
-            Диагностика
-            <br />
-            зрения
+            Помощь в подборе
           </p>
           <DefButton 
             text='Узнать подробнее'
@@ -57,7 +55,7 @@ export default function List () {
             padding: 18px 35px; position: absolute; bottom: 29px; left: 50%; transform: translate(-50%, 0); width: 220px;
             box-shadow: inset 0px -1px 3px rgba(255, 255, 255, 0.2);filter: drop-shadow(0px 19px 15px rgba(0, 0, 0, 0.15));white-space: nowrap;
             '
-            link='vision-diagnostics'
+            link='selection-of-lenses'
           />
         </BigLi>
       </ServicesList>

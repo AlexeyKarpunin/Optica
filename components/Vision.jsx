@@ -6,9 +6,9 @@ export default function Vision () {
       <VisionContent>
         <VisionText>
           <h1>
-            Диагностика
-            <br />
-            зрения
+            Огромный 
+            выбор очков, 
+            линз и оправ
           </h1>
           <p>
             Центр оптической коррекции «TOPALOFF» 
