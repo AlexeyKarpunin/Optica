@@ -14,7 +14,7 @@ export default function Footer ({bigPadding}) {
         <Info />
       </FooterContainer>
       <div className='bzcekh--container'>
-        <div style={{display: 'flex'}}>
+        <div className='bzcekh--wrraper' style={{display: 'flex'}}>
           <div className='is-bzcekh--text'> © 2021 Все права защищены.</div>
           <div className='column is-bzcekh'>
             <a target='_blank' rel='noreferrer' className='' href='https://bzcekh.ru/' title='Изготовление интернет сайтов в Астрахани'>
