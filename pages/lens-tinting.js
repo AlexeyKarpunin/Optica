@@ -107,7 +107,7 @@ const SomeInfoContainer = styled.div`
       line-height: 20px;
       color: #1C8594;
       position: relative;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       }
   
       ul li::before {
