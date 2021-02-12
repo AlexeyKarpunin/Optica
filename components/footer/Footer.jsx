@@ -14,16 +14,12 @@ export default function Footer ({bigPadding}) {
         <Info />
       </FooterContainer>
       <div className='bzcekh--container'>
-        <div className='column is-bzcekh' style={{marginRight: '150px', marginTop: '20px'}}>
+        <div className='column is-bzcekh' style={{marginTop: '20px'}}>
           <a target='_blank' rel='noreferrer' className='' href='https://bzcekh.ru/' title='Изготовление интернет сайтов в Астрахани'>
             <img className='is-bzcekh' src='/img/logo3.svg' alt='Маркетинговое агентство «Бизнес Цех»' title='Заказать разработку интернет сайта в Астрахани' />
           </a>
         </div>
-        <div className='is-bzcekh--text'>
-          <p>
-            © 2021 Все права защищены.
-          </p>
-        </div>
+        <div className='is-bzcekh--text'> © 2021 Все права защищены.</div>
       </div>
     </FooterSection>
   );
