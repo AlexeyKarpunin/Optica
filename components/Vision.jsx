@@ -44,6 +44,7 @@ const VisionContent = styled.div`
 const VisionText = styled.div`
   max-width: 450px;
   padding: 112px 0 0 0px;
+
   h1{
     margin: 0;
     font-style: normal;
@@ -52,6 +53,7 @@ const VisionText = styled.div`
     color: #3F3F3F;
     line-height: 1.2;
   }
+
   p{
     font-style: normal;
     font-weight: 500;
@@ -59,9 +61,22 @@ const VisionText = styled.div`
     color: #636464;
   }
 
+  @media (max-width: 1180px) {
+    padding: 112px 0 0 10px;
+  }
+
   @media (max-width: 420px) {
     h1 {
       font-size: 38px;
+    }
+  }
+  @media (max-width: 345px) {
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 20px;
     }
   }
 `;
