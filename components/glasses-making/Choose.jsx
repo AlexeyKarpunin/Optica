@@ -34,7 +34,7 @@ const AboutComponiContainer = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: row-reverse;
-  padding: 75px 0 100px 0px;
+  padding: 75px 0 40px 0px;
 
   @media (max-width: 1170px) {
     flex-direction: column-reverse;

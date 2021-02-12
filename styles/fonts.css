@@ -262,6 +262,44 @@ body {
 }
 
 
+img.is-bzcekh {
+  max-width: 120px
+}
+
+.is-bzcekh--text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1C626B;
+}
+
+.is-bzcekh--text p {
+  margin-top: 50px;
+  white-space: nowrap;
+}
+
+.is-bzcekh {
+  padding: 0 0 20px 0;
+}
+
+.bzcekh--container {
+  max-width: 1028px;
+  padding: 10px 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .bzcekh--container {
+    flex-direction: column;
+  }
+  .is-bzcekh--text p {
+    margin: 0;
+  }
+}
+
 
 
 

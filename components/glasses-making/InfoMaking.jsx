@@ -13,7 +13,7 @@ export default function info() {
           <p>Центр оптической коррекции «Topaloff» предоставляет услуги мастерской по изготовлению очков, а также по установке или замене линз в оправе заказчика</p>
           <Data>
             <h2> 
-              Сроки изотовления зависят от :
+              Сроки изотовления зависят от:
             </h2>
             <ul>
               <li>Сложности работ</li>
@@ -47,7 +47,7 @@ const InfoContainer = styled.div`
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
-  padding: 75px 0 100px 0px;
+  padding: 75px 0 40px 0px;
 
   @media (max-width: 1170px) {
     flex-direction: column-reverse;
@@ -146,7 +146,7 @@ h2 {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 20px;
   color: #1C8594;
   position: relative;
   margin-bottom: 10px;
@@ -158,10 +158,10 @@ h2 {
     width: 12px;
     height: 20px;
     left: -30px;
-    top: 50%;
-    -webkit-transform: translate(-50%,0);
-    -ms-transform: translate(-50%,0);
-    transform: translate(0, -50%);
+
+    // -webkit-transform: translate(-50%,0);
+    // -ms-transform: translate(-50%,0);
+    // transform: translate(0, -50%);
     background: rgba(83,200,231,0.5);
 }
 

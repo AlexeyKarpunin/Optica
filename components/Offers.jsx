@@ -10,13 +10,6 @@ export default function Offers () {
           <VidioBox>
             {/* <img src='/img/play.png' alt='play' /> */}
           </VidioBox>
-          <DefButton 
-            text='Записаться на прием'
-            styles='padding: 23px 40px;margin-top: 90px;
-            box-shadow: inset 0px -1px 3px rgba(255, 255, 255, 0.2);
-            filter: drop-shadow(0px 19px 15px rgba(0, 0, 0, 0.15));
-            '
-          />
         </OffersVideo>
         <OffersList>
           <h2> 
@@ -130,7 +123,7 @@ const OffersList = styled.div`
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 20px;
   color: #1C8594;
   position: relative;
   margin-bottom: 10px;
@@ -142,10 +135,11 @@ const OffersList = styled.div`
     width: 12px;
     height: 20px;
     left: -30px;
-    top: 50%;
-    -webkit-transform: translate(-50%,0);
-    -ms-transform: translate(-50%,0);
-    transform: translate(0, -50%);
+    top: -3px;
+    // top: 50%;
+    // -webkit-transform: translate(-50%,0);
+    // -ms-transform: translate(-50%,0);
+    // transform: translate(0, -50%);
     background: rgba(83,200,231,0.5);
 }
 

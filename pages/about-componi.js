@@ -84,7 +84,7 @@ const WhyWeConteiner = styled.div`
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
-      line-height: 150%;
+      line-height: 20px;
       color: #1C8594;
       position: relative;
       margin-bottom: 10px;
@@ -95,11 +95,12 @@ const WhyWeConteiner = styled.div`
         position: absolute;
         width: 12px;
         height: 20px;
+        top: -3px;
         left: -30px;
-        top: 50%;
-        -webkit-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-        transform: translate(0, -50%);
+        // top: 50%;
+        // -webkit-transform: translate(-50%,0);
+        // -ms-transform: translate(-50%,0);
+        // transform: translate(0, -50%);
         background: rgba(83,200,231,0.5);
     }
   

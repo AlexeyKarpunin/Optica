@@ -38,6 +38,7 @@ function SomeText () {
 const SomeTextSection = styled.section`
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0 0 50px 0;
 `;
 
 const SomeTextContainer = styled.div`
