@@ -22,7 +22,7 @@ const ServicesSection = styled.section`
 `;
 const ServicesContainer = styled.div`
   max-width: 1170px;
-  padding-top: 78px;
+  padding-top: 0px;
   margin: 0 auto;
   display: flex;
 

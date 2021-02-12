@@ -7,6 +7,7 @@ import Offers from '../components/Offers';
 import Wait from '../components/Wait';
 import Ask from '../components/ask/Ask'
 import Footer from '../components/footer/Footer';
+import Glasses from '../components/Glasses';
 import '../styles/fonts.css';
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Head />
       <Header activeLink='main' />
       <Vision />
+      <Glasses />
       <BackgroundWrraper>
         <Services />
         <Offers />
