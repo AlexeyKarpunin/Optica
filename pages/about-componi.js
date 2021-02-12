@@ -95,7 +95,7 @@ const WhyWeConteiner = styled.div`
         position: absolute;
         width: 12px;
         height: 20px;
-        top: -3px;
+        top: 3px;
         left: -30px;
         // top: 50%;
         // -webkit-transform: translate(-50%,0);

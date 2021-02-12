@@ -139,7 +139,7 @@ const OffersList = styled.div`
     width: 12px;
     height: 20px;
     left: -30px;
-    bottom: 5px;
+    top: 5px;
     // top: 50%;
     // -webkit-transform: translate(-50%,0);
     // -ms-transform: translate(-50%,0);
