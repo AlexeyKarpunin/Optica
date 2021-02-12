@@ -36,7 +36,12 @@ export default function Glasses () {
 const GlassesSection = styled.section`
   max-width: 1920px;
   margin: 0 auto;
-  padding: 32px 0 0 0;
+  padding: 64px 0 0 0;
+
+  @media (max-width: 950px) {
+  padding: 32px 0 50px 0;
+
+  }
 `;
 const GlassesContainer = styled.div`
   max-width: 1170px;

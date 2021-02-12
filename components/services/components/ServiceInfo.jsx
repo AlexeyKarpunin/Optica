@@ -83,6 +83,7 @@ const HeadLine = styled.div`
     line-height: 120%;
     color: #3F3F3F;
     margin: 10px 0 0 0;
+    
     span {
       color: #1DB9C8;
       font-weight: bold;
