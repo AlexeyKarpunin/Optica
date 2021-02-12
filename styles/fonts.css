@@ -291,8 +291,14 @@ img.is-bzcekh {
 
 @media screen and (max-width: 480px) {
   .bzcekh--wrraper {
-    flex-direction: column-reverse;
-  }  
+    flex-direction: column;
+  }
+  .bzcekh--container {
+    display: block;
+  }
+  .is-bzcekh--text {
+    margin: 0 0 10px 0;
+  }
 }
 
 
