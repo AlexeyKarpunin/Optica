@@ -156,7 +156,7 @@ h2 {
     content: '';
     position: absolute;
     width: 12px;
-    height: 20px;
+    height: 15px;
     left: -30px;
     top: 3px;
     // -webkit-transform: translate(-50%,0);

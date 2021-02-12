@@ -111,7 +111,7 @@ const OffersList = styled.div`
     font-size: 24px;
     line-height: 29px;
     color: #1C626B;
-    margin: 20px 0 15px 10px;
+    margin: 20px 0 15px 15px;
   }
 
   h2 span {
@@ -136,9 +136,9 @@ const OffersList = styled.div`
   ul li::before {
     content: '';
     position: absolute;
-    width: 12px;
-    height: 20px;
-    left: -30px;
+    width: 10px;
+    height: 13px;
+    left: -20px;
     top: 5px;
     // top: 50%;
     // -webkit-transform: translate(-50%,0);

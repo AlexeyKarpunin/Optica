@@ -133,7 +133,7 @@ const OffersList = styled.div`
     content: '';
     position: absolute;
     width: 12px;
-    height: 20px;
+    height: 15px;
     left: -30px;
     top: 3px;
     // top: 50%;
