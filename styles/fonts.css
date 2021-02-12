@@ -273,11 +273,12 @@ img.is-bzcekh {
   line-height: 19px;
   color: #1C626B;
   white-space: nowrap;
-  align-self: flex-end;
+  align-self: center;
+  margin-right: 10px;
 }
 
 .is-bzcekh {
-  align-self: flex-end;
+  align-self: center;
 }
 
 .bzcekh--container {
@@ -285,7 +286,7 @@ img.is-bzcekh {
   padding: 10px 15px 20px 15px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 480px) {
